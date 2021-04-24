@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div >
+ <form id="tempc"  onsubmit="calc(); return false">
+   <label for="temp" id="b">Please enter the temperature you would like to convert</label>
+   <br/><input type="number" name="temp" id="temp"> 
+   <select name="tempd" id="tempd">
+       <option value="cel">℃elsius </option>
+       <option value="fah">℉ahrenheit</option> 
+   </select> <br/><br>
+   <input id="btn" type="submit" value="CONVERT"><br/><br>
+   <br>
+   <span id="res"> </span>
+</form>
+</div>
+<script src="app.js" defer></script> 
+</body>
+</html>
